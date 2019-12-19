@@ -65,4 +65,6 @@ const findDesiredInputs = () => {
 	return 100 * correctNoun + correctVerb
 }
 
+module.exports = { intCodeComputer, findDesiredInputs }
+
 console.log('Result => ', findDesiredInputs())
