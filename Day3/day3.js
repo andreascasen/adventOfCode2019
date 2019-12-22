@@ -1,5 +1,13 @@
 const { wire1, wire2 } = require('./data')
 
+/**
+ * @function findClosestIntersection
+ * @description - Takes in 2 wires (arrays of wirepath sections), find the intersection
+ * of wires that is closest to the starting point { X: 0, Y: 0 } and returns the
+ * intersection's distance to it.
+ * @param { String[] } wire1 
+ * @param { String[] } wire2 
+ */
 const findClosestIntersection = (wire1, wire2) => {
 	const wire1Positions = mapWirePositions(wire1)
 	const wire2Positions = mapWirePositions(wire2)
